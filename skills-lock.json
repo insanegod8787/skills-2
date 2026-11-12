@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "skills": {
+    "impeccable": {
+      "source": "yikart/AiToEarn",
+      "sourceType": "github",
+      "skillPath": "project/aitoearn-web/.agents/skills/impeccable/SKILL.md",
+      "computedHash": "f4a832038819cd44a8587ea60e3d4b99016d1c3b10de53b9f34de21ddc3a720e"
+    }
+  }
+}

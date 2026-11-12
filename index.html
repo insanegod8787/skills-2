@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個人作品集 - 極簡風格</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#work" class="nav-link">作品集</a></li>
+                    <li><a href="#about" class="nav-link">關於我</a></li>
+                    <li><a href="#contact" class="nav-link">聯繫</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page">
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">創意設計師</h1>
+                    <p class="hero-subtitle">專注於用戶體驗與視覺設計</p>
+                    <a href="#work" class="btn btn-primary">查看作品</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Works Section -->
+        <section class="works" id="work">
+            <div class="container">
+                <div works-filter class="works-filter">
+                    <button filter-btn class="filter-btn active" data-filter="all">所有</button>
+                    <button filter-btn class="filter-btn" data-filter="design">設計</button>
+                    <button filter-btn class="filter-btn" data-filter="development">開發</button>
+                </div>
+                <div class="works-grid" id="worksGrid">
+                    <!-- 作品集項目 -->
+                <article class="work-card" data-categories="design,development">
+                    <div class="work-image">項目 1</div>
+                    <div class="work-content">
+                        <span class="work-category">設計</span>
+                        <h3 class="work-title">視覺重設計案</h3>
+                        <p class="work-description">重新設計了一個 SaaS 儀表板，提升 30% 的使用者效率。</p>
+                    </div>
+                </article>
+
+                <article class="work-card" data-categories="design">
+                    <div class="work-image">項目 2</div>
+                    <div class="work-content">
+                        <span class="work-category">設計</span>
+                        <h3 class="work-title">品牌識別系統</h3>
+                        <p class="work-description">為新創公司開發完整的品牌視覺系統，包含 logo、色彩與字型。</p>
+                    </div>
+                </article>
+
+                <article class="work-card" data-categories="development">
+                    <div class="work-image">項目 3</div>
+                    <div class="work-content">
+                        <span class="work-category">開發</span>
+                        <h3 class="work-title">個人作品集網站</h3>
+                        <p class="work-description">使用現代化前端技術建構的響應式個人作品集。</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about" id="about">
+            <div class="container">
+                <div class="about-content">
+                    <h2 class="section-heading">關於我</h2>
+                    <p class="about-text">
+                        我是一名熱愛設計與技術的創意設計師，專注於打造直觀且美觀的數位體驗。從網站重新設計到品牌識別系統，我致力於通過深思熟慮的設計來解決現實世界的問題。
+                    </p>
+                    <div about-stats class="about-stats">
+                        <div stat-item>
+                            <div stat-number>5+</div>
+                            <div stat-label>年經驗</div>
+                        </div>
+                        <div stat-item>
+                            <div stat-number>15+</div>
+                            <div stat-label>項目完成</div>
+                        </div>
+                        <div stat-item>
+                            <div stat-number>100+</div>
+                            <div stat-label>滿意客戶</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="contact-content">
+                    <h2 class="section-heading">聯繫方式</h2>
+                    <p class="contact-text">有興趣合作或有問題嗎？歡迎通過電子郵件直接聯繫我。</p>
+                    <div class="contact-details">
+                        <a href="mailto:hello@example.com" class="contact-email">hello@example.com</a>
+                        <div class="social-links">
+                            <a href="#" class="social-link">LinkedIn</a>
+                            <a href="#" class="social-link">GitHub</a>
+                            <a href="#" class="social-link">Dribbble</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">2024 個人作品集。保留所有權利。</p>
+        </div>
+    </footer>
+
+    <!-- Floating Dice -->
+    <div class="dice-floating" aria-label="隨機骰子" role="button" tabindex="0">
+        <svg dice-svg viewBox="0 0 100 100" class="dice-svg">
+            <polyline points="50,30 70,50 50,70" stroke="var(--accent)" stroke-width="8" fill="none"/>
+            <polyline points="50,30 30,50 50,70" stroke="var(--accent)" stroke-width="8" fill="none"/>
+            <polyline points="30,30 50,50 70,70" stroke="var(--accent)" stroke-width="8" fill="none"/>
+            <polyline points="70,30 50,50 30,70" stroke="var(--accent)" stroke-width="8" fill="none"/>
+            <text x="50" y="55" text-anchor="middle" fill="var(--ink)" font-family="system-ui" font-size="35" font-weight="bold" dominant-baseline="middle" class="dice-number" id="diceNumber">1</text>
+        </svg>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
